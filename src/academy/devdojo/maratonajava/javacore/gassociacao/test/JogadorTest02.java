@@ -10,3 +10,5 @@ public class JogadorTest02 {
         j1.setTime(time);
     }
 }
+
+//apenas para fins de testes.
