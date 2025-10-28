@@ -7,7 +7,7 @@ public class JogadorTest01 {
     static void main() {
         Jogador j1 = new Jogador("Neymar");
         Jogador j2 = new Jogador("Paulinho");
-        Jogador j3 = new Jogador("Ricardo");
+        Jogador j3 = new Jogador("Ricardinho");
 
         Jogador[] jogadores = {j1, j2, j3};
 
