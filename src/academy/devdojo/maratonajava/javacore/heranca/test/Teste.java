@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.heranca.test;
 
 import academy.devdojo.maratonajava.javacore.heranca.dominio.Endereco;
-import academy.devdojo.maratonajava.javacore.heranca.dominio.Pessoa;
+import academy.devdojo.maratonajava.javacore.heranca.dominio.Funcionario;
 
 public class Teste {
     static void main() {
@@ -9,12 +9,16 @@ public class Teste {
         endereco.setRua("Rua 03");
         endereco.setCep("6315000");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Paulo");
-        pessoa.setCpf("60325749388");
-        pessoa.setEndereco(endereco);
 
-        pessoa.imprime();
+        Funcionario funcionario = new Funcionario("Paulo");
+        funcionario.setNome("Ricardson");
+        funcionario.setCpf("62558442399");
+        funcionario.setEndereco(endereco);
+        funcionario.setSalario(2418.55);
+
+        System.out.println("-------------------------------------");
+
+        funcionario.imprime();
 
     }
 }

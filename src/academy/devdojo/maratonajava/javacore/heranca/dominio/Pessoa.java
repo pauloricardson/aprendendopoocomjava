@@ -5,6 +5,22 @@ public class Pessoa {
     private String cpf;
     private Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco estático de pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
+
+    public Pessoa(String nome) {
+        System.out.println("Dentro doo contrutor de pessoa");
+        this.nome = nome;
+    }
 
     public String getNome() {
         return nome;
